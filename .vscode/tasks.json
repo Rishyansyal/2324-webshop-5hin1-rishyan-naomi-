@@ -1,0 +1,9 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "start server",
+        "command": "./start.sh", // Could be any other shell command,
+        "type": "shell"
+    }]
+  }
+  
