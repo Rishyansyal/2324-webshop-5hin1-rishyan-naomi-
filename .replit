@@ -4,6 +4,11 @@ run = ["bash", "start.sh"]
 entrypoint = "README.md"
 
 hidden=[".config", ".gitpod.yml", ".gitignore",".gitattributes","package.json","yarn.lock","LICENSE"]
+modules = ["bash:v1-20231215-e6d471c"]
 
 [nix]
 channel = "stable-23_11"
+
+[deployment]
+run = ["bash", "main.sh"]
+deploymentTarget = "cloudrun"
