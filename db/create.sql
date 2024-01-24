@@ -1,31 +1,21 @@
---
--- create tables
---
-
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
   name VARCHAR(255),
-  hoeveelheid integer,
-  description TEXT,
-  price NUMERIC(10, 2)
-
+  hoeveelheid VARCHAR(10),
+  price NUMERIC(10, 2),
+  description VARCHAR(255)
 );
 
-
---
--- populate with data
---
--- generared using
--- curl "https://api.mockaroo.com/api/910b6c20?count=100&key=90eac760" > seed.sql
---
--- want different data? check: https://www.mockaroo.com/910b6c20
---
-
-insert into products (name, description, hoeveelheid, code, price) values ('durex','de classic condoom  is in elke maat beschikbaar en een zeer toegangelijke soort voor beginners', '20 stuks', '816905633-0', 10.99);
-insert into products (name, description, code, price) values ('Post Mortem', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);
-insert into products (name, description, code, price) values ('Scarlet and the Black, The', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5);
-insert into products (name, description, code, price) values ('Aquí llega Condemor, el pecador de la pradera', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5);
-insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
-insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 14);
-
+INSERT INTO products (name, description, hoeveelheid, code, price)
+VALUES ('durex', 'de classic condoom is in elke maat beschikbaar en een zeer toegankelijke soort voor beginners', '01', '816905633-0', 10.99);
+INSERT INTO products (name, description, hoeveelheid, code, price)
+VALUES ('Post Mortem', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '01', '077030122-3', 11.00);
+INSERT INTO products (name, description, hoeveelheid, code, price)
+VALUES ('Scarlet and the Black, The', 'Pellentesque at nulla. Suspendisse potenti.', '01', '445924201-X', 13.50);
+INSERT INTO products (name, description, hoeveelheid, code, price)
+VALUES ('Aquí llega Condemor, el pecador de la pradera', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '01', '693155505-7', 13.50);
+INSERT INTO products (name, description, hoeveelheid, code, price)
+VALUES ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '01', '686928463-6', 14.00);
+INSERT INTO products (name, description, hoeveelheid, code, price)
+VALUES ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '01', '492662523-7', 14.00);
