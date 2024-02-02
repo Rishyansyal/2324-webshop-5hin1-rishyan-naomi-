@@ -9,7 +9,7 @@ CREATE TABLE products (
 
 INSERT INTO products (name, description,amount, code, price)
 VALUES ('durex', 'de classic condoom is in elke maat beschikbaar en een zeer toegankelijke soort voor beginners.', 10, '816905633-0',10.99);
-INSERT INTO products (name, description, hoeveelheid, code, price)
+INSERT INTO products (name, description, amount, code, price)
 VALUES ('prodoom', 'stimulerende condoom, dit is vooral perfect voor de meiden voor de extra stimulatie. als je extra sensatie wilt ervaren is deze perfect voor jou! het is beschikbaar in dosis van tien. ',10, '077030122-3', 12.00);
 INSERT INTO products (name, description, amount, code, price)
 VALUES ('eigen ontworpen condoom', 'je kan nu je eigen condoom ontwerpen, je houdt de classic condoom in de verpakking. Op die verpakking kun je je eigen foto laten maken.',10, '445924201-X', 13.50);
