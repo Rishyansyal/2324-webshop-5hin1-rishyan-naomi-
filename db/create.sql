@@ -20,13 +20,19 @@ VALUES ('wiet condoom','heb je zin in meer sensatie tijdens de geslachtsgemeensc
 INSERT INTO products (name, description, amount, code, price)
 VALUES ('vrouwencondooms, durex', 'heb je als man geen zin om een condoom te dragen? geen probleem we hebben nu hier de vrouwencondoom voor u. of heeft u er niet zo veel vertrouwen in dat de man hem altijd draagt kunt u nu het touw in eigen handen nemen. ',10, '686928463-6',10.99);
 INSERT INTO products (name, description, amount, code, price)
-VALUES ('xxs condoom','naast de xs,s,m,l en xl maten hebben we nu ook de extra small condooms',10, '492626523-7', 8.00);
+VALUES ('harde condoom','naast de dunne rubbere condoms heb je nu ook de harde siliconen condooms, ze blijven altijd in goeie vorm, reuseable!',10, '492626523-7', 20.00);
+INSERT INTO products (name, description, amount, code, price)
+VALUES ('condooms met geur','hou je niet van de geur van rubber of van intieme lichaamsdelen zijn de condooms met geur voor jou, verkijgbaar in aardbeiensmaak.',10, '492664723-7', 15.00);
+INSERT INTO products (name, description, amount, code, price)
+VALUES ('Condooms die het klaarkomen uitstellen voor de man.','de naam zegt het al  houd jij of je man het niet zolang vol, dan is deze condoom voor zo heb je lang plezier van de sex',10, '492664273-7', 14.99);
+INSERT INTO products (name, description, amount, code, price)
+VALUES ('Latexvrije condooms.','hou je toch wel van intieme momenten maar ben je allergisch voor latex, hebben we hier de soort voor jou. de condooms die geen latex bevatten',10, '492664273-7', 14.99);
 
 
-CREATE TABLE Merken (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(255),
-);
+CREATE TABLE Merken 
+  (id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255))
+;
 
 insert into Merken (name)
 values ('durex');
@@ -46,22 +52,28 @@ values ('vrouwencondooms');
 insert into Merken (name)
 values ('Velvet Goldmine');
 
-Create Tabel Maten (
-  id Integer Primary Key AUTOINCREMENT,
-  name VARCHAR(255),
-  );
+Create TABLE Maten 
+  (id Integer Primary Key AUTOINCREMENT,
+  name VARCHAR(255))
+  ;
 
 Insert into maten (name)
-value ('XS')
+values ('XXS');
 
 Insert into maten (name)
-value ('S')
+values ('XS');
 
 Insert into maten (name)
-value ('M')
+values ('S');
 
 Insert into maten (name)
-value ('L')
+values ('M');
 
 Insert into maten (name)
-value ('XL')
+values ('L');
+
+Insert into maten (name)
+values ('XL');
+
+Insert into maten (name)
+values ('XXL');
