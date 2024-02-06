@@ -1,3 +1,47 @@
+# antekeningen
+
+1. Aanpassen APi
+    Zie video 5
+Mapje api/index.js
+rgeele: app.get('/api/products') geet aan waar de web de vraag aaan de api vraagt en getproduct geeft de code die de vraag beantwoord. In getProducts staat de sql query voor de database
+regel  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code,products.amount AS amount, products.price AS price FROM products ORDER BY id ASC')
+pas de query aan, zodat de extra velden door uit de database worden opgevraagd. Gebruik altijd 'AS' bij 1:n moet je join gebruiken  
+
+
+3. Aanpassen web
+    Zie video 6
+
+  web/index.html
+  onder de regel  <!-- template for product info--> staat het template voor een product het teplate wordt voor elke product gekopieerd.
+  als je een veld toevoegd aan de template dan moet je de waarde erin laten zetten.
+  Dat doe je 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Deze repo is onderdeel van het vak informatica op het Emmauscollege Rotterdam.
 
 [Meer info over deze opdracht](https://informatica.emmauscollege.nl/)
