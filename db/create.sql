@@ -16,9 +16,11 @@ VALUES ('eigen ontworpen condoom', 'je kan nu je eigen condoom ontwerpen, je hou
 INSERT INTO products (name, description, amount, code, price)
 VALUES ('Sugant: glow in the dark condoom, ', 'hou jij meer van intimiteit in de nacht, dan is deze condoom voor jou! hij geeft namelijk licht in het donker. en geeft je daardoor de ultieme ervaring',10, '693155505-7', 15.00);
 INSERT INTO products (name, description, amount, code, price)
+VALUES ('wiet condoom','heb je zin in meer sensatie tijdens de geslachtsgemeenschap, dan is deze wiet condoom voor jou (alleen voor mensen boven de 18+)',10, '492662523-7', 14.00);
+INSERT INTO products (name, description, amount, code, price)
 VALUES ('vrouwencondooms, durex', 'heb je als man geen zin om een condoom te dragen? geen probleem we hebben nu hier de vrouwencondoom voor u. of heeft u er niet zo veel vertrouwen in dat de man hem altijd draagt kunt u nu het touw in eigen handen nemen. ',10, '686928463-6',10.99);
 INSERT INTO products (name, description, amount, code, price)
-VALUES ('wiet condoom','heb je zin in meer sensatie tijdens de geslachtsgemeenschap, dan is deze wiet condoom voor jou (alleen voor mensen boven de 18+)',10, '492662523-7', 14.00);
+VALUES ('xxs condoom','naast de xs,s,m,l en xl maten hebben we nu ook de extra small condooms',10, '492626523-7', 8.00);
 
 
 CREATE TABLE Merken (
