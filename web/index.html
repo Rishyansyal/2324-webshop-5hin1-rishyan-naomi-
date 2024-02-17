@@ -26,7 +26,7 @@
   <!-- menubalk -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <input type="text" id="searchBar" placeholder="Search..">
+      <input type="text" id="searchBar" placeholder="Search.."> <!-- Bron Chat.GPT.com --><!-- https://www.w3schools.com/howto/howto_css_searchbar.asp -->
       <a class="navbar-brand" href="#">
         <img src='images/foto4.jpg' style="width: 50px; height: 50px;"">
         <span>Omoe's'hop</span>
@@ -41,7 +41,6 @@
             <a class="nav-link" href="#">Artikelen <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Durex.html">Durex</a>
           </li>
         </ul>
         <a href="basket.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Winkelwagen <span class="num_products"></span></button></a>
@@ -54,25 +53,27 @@
 		<div class="container">
 		</div>	
     <!-- template for product info-->
-  	<template id="productcard">
-		<div class="col-sm">
-			<div class="card" onclick="openArticlePage(this)">
-				<h5 class="card-header product_title"></h5>
-				<img width="200" class="product_image card-img-top">
-				<div class="card-body">
-					<p class="product_description card-text"></p>
-					<ul class="product-properties">
-            <li><span class="propert-name">hoeveelheid:</span><span class="product_amount"></span></li>
-						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
-						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
-					</ul>
-					<input class="product_amount" type="number" value="1" min="1">
-					<input class="product_id" type="hidden" name="id" data-json="">
-					<button class="btn btn-outline-dark shop-button" onclick="event.stopPropagation();addAmountClosestToBasket(this);$('.toast').toast('show')">🛒</button>
-				</div>
-			</div>
-		</div>
-	  </template>
+    <template id="productcard">
+        <div class="col-sm">
+            <div class="card" onclick="openArticlePage(this)">
+                <h5 class="card-header product_title"></h5>
+                <img width="200" class="product_image card-img-top">
+                <div class="card-body">
+                    <p class="product_description card-text"></p>
+                    <ul class="product-properties">
+                        <li><span class="propert-name">Hoeveelheid:</span><span class="product_amount"></span></li>
+                        <li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
+                        <li><span class="propert-name">Maten:</span><span class="product_sizes"></span></li> <!-- Toegevoegd -->
+                        <li><span class="propert-name">Code:</span><span class="product_code"></span></li>
+                    </ul>
+                    <input class="product_amount" type="number" value="1" min="1">
+                    <input class="product_id" type="hidden" name="id" data-json="">
+                    <button class="btn btn-outline-dark shop-button" onclick="event.stopPropagation();addAmountClosestToBasket(this);$('.toast').toast('show')">🛒</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
 	</main>
 
   <!-- voettekst -->
