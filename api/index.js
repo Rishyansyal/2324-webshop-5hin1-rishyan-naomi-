@@ -245,8 +245,8 @@ function sendMail(subject, body, recipent) {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.GMAIL_EMAIL,
-      pass: process.env.GMAIL_PASSWORD
+      user: '21ergajgagear3@gmail.com'.env.GMAIL_EMAIL,
+      pass: 'HetwAcHtwoordis1'.env.GMAIL_PASSWORD
     }
   });
 
