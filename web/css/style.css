@@ -1,4 +1,4 @@
-/* all pages */
+* all pages */
 body {
   background-color: #8e8080;
 }
@@ -15,6 +15,13 @@ footer {
     top: 50px; 
     right: 0; 
     z-index:0;
+}
+
+.centertext {  /* https://www.w3schools.com/css/css_align.asp */
+  margin: auto;
+  width: 75%;
+  border: 2px 
+  padding: 10px;
 }
 
 .shop-button {
@@ -77,4 +84,3 @@ footer {
   width: 25%;
   float: left;
 }
-
